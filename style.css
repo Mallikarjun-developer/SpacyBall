@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+
+.container {
+  position: relative;
+  height: 90vh;
+  width: 90%;
+  left: 5%;
+  background-image: url("./images/GAME.jpg");
+  box-shadow: 0px 0px 14px 10px rgb(255, 145, 1);
+  text-align: center;
+  color: white;
+}
+
+@keyframes GAME {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: -3000px 0;
+  }
+}
+
+body {
+  background-color: rgba(12, 12, 12, 0.719);
+  font-family: "Work Sans", sans-serif;
+}
+
+.st {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 450px;
+  border: 6px solid rgb(0, 255, 157);
+  padding: 4px;
+  cursor: pointer;
+}
+
+.multitext {
+  background-image: linear-gradient(to left,
+      rgb(138, 6, 138),
+      rgb(43, 255, 0),
+      rgb(255, 0, 106),
+      yellow,
+      rgb(0, 255, 115),
+      rgb(180, 12, 12));
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 110px;
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  padding-top: 2rem;
+}
+
+.message {
+  padding-top: 14rem;
+}
+
+.hero {
+  position: absolute;
+  width: 7rem;
+  height: 7rem;
+  border: radius 50%;
+  bottom: 30%;
+  left: 45%;
+}
+
+.top {
+  color: rgb(0, 255, 157);
+  font-weight: 900;
+  padding-bottom: 0.4rem;
+  font-family: sans-serif;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+}
+
+.vill {
+  position: absolute;
+  background-image: url(./images/wi.png);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+.dark {
+  /*position: absolute;
+  background-color: azure;
+  background-image: url(./images/grey.png);*/
+  position: absolute;
+  background-image: url(./images/W2.png);
+  width: 10rem;
+  height: 10rem;
+  border-radius: 60%;
+  top: 0;
+  left: 0;
+}
+
+.final-score {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+  line-height: 5rem;
+  font-size: 5rem;
+  display: none;
+  color: rgb(146, 231, 19);
+  text-shadow: 0px 8px 8px rgba(255, 255, 255, 0.4);
+  font-weight: 900;
+}
+
+.gameover {
+  display: flex;
+  justify-content: center;
+  font-size: 5rem;
+  display: none;
+}
+
+.start {
+  display: flex;
+  align-items: flex-end;
+}
+
+.restart {
+  position: absolute;
+  display: none;
+  bottom: 40%;
+  left: 47%;
+  width: 0%;
+  height: 0%;
+  cursor: pointer;
+}
+
+.cross {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+}
+
+.game-instructions {
+  display: none;
+  background-image: url(./images/inst.jpg);
+  position: absolute;
+  letter-spacing: 0.1rem;
+  line-height: 3rem;
+  padding: 2rem;
+  color: goldenrod;
+  left: 34%;
+  top: 35%;
+  width: 30rem;
+  height: 30rem;
+  background-color: grey;
+  font-weight: 800;
+  text-align: left;
+}
+
+.cross .fas {
+  color: orangered;
+}
+
+.game-instructions h3 {
+  color: brown;
+}
+
+.fas {
+  color: rgb(255, 145, 1);
+}
+
+.fas:hover {
+  color: rgb(255, 198, 123);
+}
+
+.info-icon {
+  padding-top: 2rem;
+}
+
+.mobile-compatibility-message p {
+  opacity: 0;
+}
+
+
+
+/*Media Queries */
+@media only screen and (max-width: 768px) {
+
+  /* For mobile phones: */
+  .btn,
+  .info-icon,
+  .pokemon,
+  .logo {
+    display: none;
+  }
+
+  .topbar {
+    opacity: 0;
+  }
+
+  .mobile-compatibility-message p {
+    opacity: 1;
+    color: white;
+    text-align: center;
+    line-height: 1.4rem;
+  }
+}
